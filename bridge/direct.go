@@ -40,6 +40,8 @@ func(dbr *DirectBridge) MapControl(h *NetHost) (err error) {
 func(dbr *DirectBridge) SetUp() (err error) {
     dbr.Session, err = discordgo.New(dbr.DscC.Email, dbr.DscC.Pass)
     if err != nil { return err }
+    err = dbr.Open()
+    if err != nil { return err }
     // init discord callbacks
     dbr.Session.AddHandler(onDiscordMessage)
     for _, h := range dbr.IrcC.Hosts {

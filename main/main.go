@@ -49,7 +49,6 @@ func main() {
             if i < len(dbr.IrcC.Wranglers)-1 { fmt.Print(", ") }
         }; fmt.Println("]")
     }
-
     fmt.Println("Setting up...")
     initBrs(&bridge.MainBrIndex)
     fmt.Println("Now online.")
