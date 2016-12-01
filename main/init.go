@@ -3,7 +3,7 @@ package main
 import (
     "fmt"
     "os"
-    "bitbucket.org/iseurie/gobifrost/bridge"
+    "bitbucket.org/iseurie/bifrost/bridge"
 )
 
 func initBrs(brs *bridge.BrIndex) {
