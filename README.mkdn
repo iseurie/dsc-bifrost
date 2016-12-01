@@ -2,16 +2,21 @@
 
 [**dsc-bifrost**](https://github.com/iseurie/dsc-bifrost) is a command-line
 application which bridges [Discord](https://discordapp.com/), a fast and
-flexible VoIP and IM platform, and the open and mature IRC protocol, forwarding
-message traffic between their respective group or direct message channels to
-their respective IRC users and hosts by a configurable map.
+flexible VoIP and IM platform, and the open and mature IRC instant-messaging
+protocol, with emphasis on power and flexibility. It forwards message traffic
+between public or direct message channels to their respective IRC users and
+hosts in accordance with a configurable map.
 
 Features:
 - [ ] Interactive shell
   - [ ] Dynamic configuration
-  - [ ] Event logging 
-    - [ ] Configurable verbosity
+  - [ ] Event logging
+    - Configurable verbosity: _info, errors_
 - [ ] Bridging of direct messages to IRC nicks according to runtime
   configuration
-  - [ ] User authentication by PSK
-- [ ] Configuration for bridging of guild channels to IRC channels
+  - [ ] Direct-bridge user authentication by PSK
+- [ ] Bridging of guild channels to IRC channels (spoof clients)
+
+To-do:
+- _Refactor:_ Phase out nicks by discriminator
+- _Implement:_ Daemonization flag; logging
