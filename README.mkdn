@@ -18,5 +18,5 @@ Features:
 - [ ] Bridging of guild channels to IRC channels (spoof clients)
 
 To-do:
-- _Refactor:_ Phase out nicks by discriminator
+- _Refactor:_ Nick with ChID (not discriminator)
 - _Implement:_ Daemonization flag; logging
