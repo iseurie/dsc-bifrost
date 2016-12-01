@@ -5,7 +5,7 @@ import (
     "fmt"
     "path"
     "flag"
-    "bitbucket.org/iseurie/gobifrost/bridge"
+    "bitbucket.org/iseurie/bifrost/bridge"
 )
 
 func main() {
